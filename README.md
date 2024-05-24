@@ -6,6 +6,8 @@
 
 I'm Thota Saikumar, an enthusiastic learner passionate about exploring new technologies and programming languages. I'm constantly expanding my skills through various projects and challenges. 🌱
 
+## Recent Repositories 🚀
+
 ## Featured Projects
 
 | Project Name           | Description                               | Technologies |
@@ -22,5 +24,7 @@ I'm Thota Saikumar, an enthusiastic learner passionate about exploring new techn
 ## Let's Connect!
 
 Feel free to explore my repositories and get in touch if you'd like to collaborate or have any questions. 📫
+
+mazie0/github-action-markdown-comment-replace
 
 [![Mazie0's GitHub stats](https://github-readme-stats.vercel.app/api?username=Mazie0&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
