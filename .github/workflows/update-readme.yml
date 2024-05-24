@@ -14,7 +14,7 @@ jobs:
       
       - name: Fetch recent repositories
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.readme_token }}
         run: |
           repos=$(gh repo list Mazie0 --limit 5 --json nameWithOwner,description,url,primaryLanguage --jq '.[] | "\* **[\(.nameWithOwner)](\(.url))** - \(.description | ascii_downcase) (Language: \(.primaryLanguage))"')
           echo "recent_repos=$repos" >> $GITHUB_OUTPUT
