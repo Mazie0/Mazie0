@@ -11,12 +11,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      
+
       - name: Fetch recent repositories
         env:
-          GITHUB_TOKEN: ${{ secrets.readme_token }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
-          repos=$(gh repo list Mazie0 --limit 5 --json nameWithOwner,description,url,primaryLanguage --jq '.[] | "\* **[\(.nameWithOwner)](\(.url))** - \(.description | ascii_downcase) (Language: \(.primaryLanguage))"')
+          repos=$(gh repo list Mazie0 --limit 5 --json nameWithOwner,description,url,homepageUrl,primaryLanguage --jq '.[] | "\* **[\(.nameWithOwner)](\(.url))** - \(.description | ascii_downcase) (Language: \(.primaryLanguage)) [![Preview](\(.homepageUrl + "/preview.png"))]"')
           echo "recent_repos=$repos" >> $GITHUB_OUTPUT
       
       - name: Update README
@@ -25,4 +25,3 @@ jobs:
           comment_id: RECENT_REPOS
           replace_file: README.md
           body: ${{ steps.fetch.outputs.recent_repos }}
-
