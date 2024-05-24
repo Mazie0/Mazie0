@@ -1,0 +1,28 @@
+name: Update README
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight
+  workflow_dispatch:     # Allows manual triggering
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Fetch recent repositories
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          repos=$(gh repo list Mazie0 --limit 5 --json nameWithOwner,description,url,primaryLanguage --jq '.[] | "\* **[\(.nameWithOwner)](\(.url))** - \(.description | ascii_downcase) (Language: \(.primaryLanguage))"')
+          echo "recent_repos=$repos" >> $GITHUB_OUTPUT
+      
+      - name: Update README
+        uses: jaywcjlove/github-action-markdown-comment-replace@v1
+        with:
+          comment_id: RECENT_REPOS
+          replace_file: README.md
+          body: ${{ steps.fetch.outputs.recent_repos }}
+
