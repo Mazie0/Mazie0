@@ -6,7 +6,6 @@
 
 I'm Thota Saikumar, an enthusiastic learner passionate about exploring new technologies and programming languages. I'm constantly expanding my skills through various projects and challenges. 🌱
 
-## Recent Repositories 🚀
 
 ## Featured Projects
 
