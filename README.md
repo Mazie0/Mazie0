@@ -1,16 +1,26 @@
-## Hi there 👋
+# Thota Saikumar (Mazie0) 👋
 
-<!--
-**Mazie0/Mazie0** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Hello and welcome to my GitHub profile!**
 
-Here are some ideas to get you started:
+## About Me
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I'm Thota Saikumar, an enthusiastic learner passionate about exploring new technologies and programming languages. I'm constantly expanding my skills through various projects and challenges. 🌱
+
+## Featured Projects
+
+| Project Name           | Description                               | Technologies |
+| ----------------------- | ----------------------------------------- | ------------ |
+| c_movie_tickets        | C program for managing movie ticket bookings | C            | 
+| Bit-coin Price Prdection| Python Project Predicting Bit-coin Price | Python,AI/ML |
+*You can find more projects on my profile!* 🔍
+
+## Skills & Interests
+
+- **Languages:** C, JavaScript, CSS 💻
+- **Focus:**  Web development, application development 🌐
+
+## Let's Connect!
+
+Feel free to explore my repositories and get in touch if you'd like to collaborate or have any questions. 📫
+
+[![Mazie0's GitHub stats](https://github-readme-stats.vercel.app/api?username=Mazie0&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
